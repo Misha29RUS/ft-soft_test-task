@@ -1,0 +1,82 @@
+/* Обнуление отступов, поля и наследование шрифтов */
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, blockquote, figure, figcaption, blockquote, form, fieldset, legend, input, button, textarea, select, optgroup, option, pre, code, a, img, hr, canvas, iframe, embed, object, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset для старых браузеров */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+/* Обнуление списков */
+ol, ul {
+    list-style: none;
+}
+
+/* Обнуление ссылок */
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Обнуление текстовых элементов */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Обнуление таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Обнуление полей форм и кнопок */
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+/* Удаление стрелок у input[type="number"] */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Стиль для доступности скрытых элементов, но доступных для скринридеров */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(50%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

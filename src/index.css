@@ -1,68 +1,55 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  height: 100%;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background: linear-gradient(
+    to bottom right,
+    var(--page-background-color)
+  );
+  font-size: 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+button:disabled {
+  cursor: not-allowed;
+  filter: brightness(70%);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+:root {
+  --font-family: "PT Sans";
+  --text-color: #ffffff;
+  --border-color: #9f9f9f;
+  --scrollbar-color: #ffffff;
+  --green-900: #006466;
+  --green-800: #065a60;
+  --green-700: #0b525b;
+  --green-600: #144552;
+  --green-500: #1b3a4b;
+  --blue-900: #212f45;
+  --purple-900: #272640;
+  --purple-800: #312244;
+  --purple-700: #3e1f47;
+  --pink-900: #4d194d;
+  --page-background-color: var(--green-900), var(--green-800), var(--green-700),
+    var(--green-600), var(--green-500), var(--blue-900), var(--purple-900),
+    var(--purple-800), var(--purple-700), var(--pink-900);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Стилизация скроллбара для Webkit-браузеров (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: none; /* цвет дорожки скроллбара */
+  border-radius: 4px; /* скругление углов дорожки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color); /* цвет ползунка скроллбара */
+  border-radius: 4px; /* скругление углов ползунка */
 }

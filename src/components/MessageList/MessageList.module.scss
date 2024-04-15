@@ -1,0 +1,20 @@
+.message_list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  //padding-bottom: 50px; /* Отступ внизу, чтобы сообщения не перекрывались инпутом */
+  padding: 20px 40px;
+  overflow-y: auto; /* Обеспечивает прокрутку */
+
+  .message_item:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .message_item_user {
+    margin-left: auto;
+  }
+
+  .message_item_ofter {
+    margin-right: auto;
+  }
+}

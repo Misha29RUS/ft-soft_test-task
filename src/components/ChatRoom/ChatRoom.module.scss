@@ -1,0 +1,35 @@
+.chat_room_container {
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+  cursor: pointer;
+
+  &:hover {
+    .room_name {
+      filter: brightness(80%);
+    }
+  }
+
+  .photo_container {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+
+  .info_container {
+    flex: 0 0 calc(80% - 15px);
+    max-width: calc(80% - 15px);
+    margin-left: 15px;
+
+    .room_name {
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.chat_room_active {
+  background-color: var(--border-color);
+}

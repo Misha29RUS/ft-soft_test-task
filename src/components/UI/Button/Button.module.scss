@@ -1,0 +1,17 @@
+.button_container {
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  display: inline-flex; /* Изменено с flex на inline-flex */
+  align-items: center;
+  cursor: pointer;
+
+  .img {
+    padding-left: 10px;
+  }
+
+  .button_text {
+    padding: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+}

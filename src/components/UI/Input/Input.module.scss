@@ -1,0 +1,14 @@
+.input_text {
+  color: var(--text-color);
+  outline: none;
+  padding: 10px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  width: 100%; /* Добавляем это свойство */
+  box-sizing: border-box;
+  flex-grow: 1; /* Заставляет textarea занимать все доступное пространство */
+}
+
+.input_text::placeholder {
+  color: var(--text-color);
+}

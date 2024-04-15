@@ -1,0 +1,30 @@
+.login_container {
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  width: 50%;
+  margin: 30px auto 0 auto;
+
+  .login_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login_header_title {
+      font-weight: 800;
+      font-size: 32px;
+    }
+  }
+
+  .login_form {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+
+    .form_elements {
+      .form_element {
+        margin-top: 10px;
+      }
+    }
+  }
+}
